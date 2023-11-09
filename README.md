@@ -79,7 +79,7 @@ Dicha función retorna un código aleatorio que se almacena en la variable **vpr
 
 Lo anterior se puede realizar ya que el valor aleatorio obtenido de la tabla de productos pertenece a la columna CODIGO la cual es clave primaria de dicha tabla de productos.
 
-Listo los 4 campos requeridos para insertar un nuevo item en la tabla de items, necesito insertar un número igual o menor al valor dado como parámetro del procedure el cual se nombro como **max_items**. Para ir insertando registros de manera iterativa hasta el número dado por la variable **max_items** se crea un ciclo while el cual utiliza un contador que se va actualizando:
+Listos los 4 campos requeridos para insertar un nuevo item en la tabla de items, necesito insertar un número igual o menor al valor dado como parámetro del procedure el cual se nombro como **max_items**. Para ir insertando registros de manera iterativa hasta el número dado por la variable **max_items** se crea un ciclo while el cual utiliza un contador que se va actualizando:
 
 ![Ciclo While](./img/cicloWhile.png)
 
@@ -111,7 +111,7 @@ Como se puede observar se ha creado una nueva factura con 11 items siendo que el
 
 ### Creación de Triggers para UPDATE,DELETE, INSERT en la tabla de items
 
-Se desea crear una nueva tabla que tenga una columna con el campo fecha de la tabla de facturas junto con la venta total para cada día. Para ello se crea la tabla con el siguiente código SQL:
+Se desea crear una nueva tabla resumen que tenga una columna con el campo fecha de la tabla de facturas junto con la venta total para cada día. Para ello se crea la tabla resumen con el siguiente código SQL:
 
 ![Creación tabla resumen](./img/tabla_resumen/creaciontabla.png)
 
